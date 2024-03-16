@@ -12,11 +12,13 @@ ${BROWSER} =    chrome
 
 *** Test Cases ***
 Verify after clicking "team" the team page is landed
+    [Tags]    test1
     FrontOfficeApp.Go to landing page
     FrontOfficeApp.Go to "team" page
 
 
 Verify on the "team page" the title is as expected
+    [Tags]    test2
     FrontOfficeApp.Go to landing page
     FrontOfficeApp.Go to "team" page
     FrontOfficeApp.Validate "team" page
